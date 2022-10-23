@@ -4,9 +4,10 @@ import 'dotenv/config';
 import App from '@/app';
 import validateEnv from '@utils/validateEnv';
 import NoticeRoute from '@routes/notice.route';
+import IrRoute from '@routes/ir.route';
 
 validateEnv();
 
-const app = new App([new NoticeRoute()]);
+const app = new App([ new NoticeRoute(), new IrRoute() ]);
 
 app.listen();
