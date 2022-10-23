@@ -1,0 +1,35 @@
+{
+  "env": "development",
+
+  "secretKey": "secretKey",
+  "log": {
+    "format": "dev",
+    "dir": "../logs"
+  },
+  "cors": {
+    "origin": true,
+    "credentials": true
+  },
+
+  //"MONGO_DB_URL": "mongodb://ddocs:Ddocs12@172.16.10.99:27017/ddocs",
+  "MONGO_DB_URL": "mongodb://127.0.0.1:27017/sisanri",
+  "BOARD_URL" : "https://www.ddocs.co.kr/board/view?",
+
+  "NCLOUD_REGION": "kr-standard",
+  "NCLOUD_END_POINT": "https://kr.object.ncloudstorage.com",
+  "NCLOUD_ACCESS_KEY": "nEfrkIN5xlQBvaz9qmBv",
+  "NCLOUD_SECRET_KEY": "UC79xVY0iOLRUAnJqVSdtY6eT0GQMQM4b67RLtcE",
+
+  "NCLOUD_BUCKET" : "ddocs-object-storage",
+  "NCLOUD_DOWNLOAD_BUCKET" : "ddocs-object-storage/download",
+  "NCLOUD_FILES_BUCKET" : "ddocs-object-storage/files",
+  "NCLOUD_THUMB_BUCKET" : "ddocs-object-storage/thumb",
+  "NCLOUD_AD_BUCKET": "ddocs-object-storage/ad",
+
+  "NCLOUD_DOWNLOAD_PATH" : "https://ddocs1.cdn.ntruss.com/download/",
+  "NCLOUD_FILES_PATH" : "https://ddocs1.cdn.ntruss.com/files/",
+  "NCLOUD_THUMB_PATH" : "https://ddocs1.cdn.ntruss.com/thumb/",
+  "NCLOUD_AD_PATH": "https://ddocs1.cdn.ntruss.com/ad/",
+
+  "DDOCS_OBJECT_ID": "6268ba299df29597d542b612"
+}
