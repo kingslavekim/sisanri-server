@@ -70,7 +70,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.0",
-    "multer": "^1.4.4",
+    "multer": "^2.0.0-rc.4",
     "node-config": "^0.0.2",
     "node-gyp": "^8.1.0",
     "nodemon": "^2.0.15",
