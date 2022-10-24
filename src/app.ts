@@ -18,6 +18,10 @@ class App {
     this.port = process.env.PORT || 3000;
     this.env = process.env.NODE_ENV || 'development';
 
+    const publicPath = path.join(__dirname, '../public');
+    this.app.use(express.static(publicPath));
+    this.app.use('*', express.static(publicPath));
+
     this.initConfig();
     this.connectToDatabase();
     this.initializeMiddlewares();
