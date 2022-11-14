@@ -7,8 +7,6 @@ import cors from 'cors';
 
 const config = require('config');
 const path = require('path');
-const history = require('connect-history-api-fallback');
-const { createProxyMiddleware } = require('http-proxy-middleware')
 
 class App {
   public app: express.Application;
@@ -59,12 +57,6 @@ class App {
   private initializeRoutes(routes: Routes[]) {
     routes.forEach(route => {
       this.app.use('/', route.router);
-      this.app.use(history());
-      this.app.use(express.static(path.join(__dirname, 'public')));
-      this.app.use(createProxyMiddleware(['/api/'], {
-        target: 'http://localhost:5001',
-        changeOrigin: true
-      }))
     });
   }
 }
