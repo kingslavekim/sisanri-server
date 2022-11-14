@@ -3,7 +3,7 @@ import irController from '@controllers/ir.controller';
 import { Routes } from '@interfaces/routes.interface';
 
 class IrRoute implements Routes {
-  public path = '/';
+  public path = '/api/';
   public router = Router();
   public irController = new irController();
 

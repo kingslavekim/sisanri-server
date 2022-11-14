@@ -3,7 +3,7 @@ import noticeController from '@controllers/notice.controller';
 import { Routes } from '@interfaces/routes.interface';
 
 class NoticeRoute implements Routes {
-  public path = '/';
+  public path = '/api/';
   public router = Router();
   public noticeController = new noticeController();
 
