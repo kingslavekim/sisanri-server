@@ -61,6 +61,10 @@ class NoticeService {
 
     return resultObject;
   }
+
+  public async getNoticeDelete(no: string): Promise<any> {
+    await this.notices.deleteOne({ no: Number(no) });
+  }
 }
 
 export default NoticeService;

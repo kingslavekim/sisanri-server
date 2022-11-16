@@ -15,6 +15,7 @@ class IrRoute implements Routes {
     this.router.get(`${this.path}getIrCount`, this.irController.getIrCount);
     this.router.get(`${this.path}getIrList`, this.irController.getIrList);
     this.router.get(`${this.path}getIrObject`, this.irController.getIrObject);
+    this.router.get(`${this.path}getIrDelete`, this.irController.getIrDelete);
   }
 }
 

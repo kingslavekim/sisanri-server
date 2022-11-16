@@ -39,6 +39,10 @@ class IrService {
 
     return resultObject;
   }
+
+  public async getIrDelete(no: string): Promise<any> {
+    await this.irs.deleteOne({ no: Number(no) });
+  }
 }
 
 export default IrService;

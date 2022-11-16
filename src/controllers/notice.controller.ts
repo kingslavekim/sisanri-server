@@ -55,6 +55,19 @@ class noticeController {
       next(error);
     }
   };
+
+  public getNoticeDelete = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      let data: any;
+
+      data = await this.NoticeService.getNoticeDelete(req.query.no.toString());
+
+      res.setHeader('getNoticeDelete', '');
+      res.status(200).json({ data: data, message: 'getNoticeDelete' });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default noticeController;
